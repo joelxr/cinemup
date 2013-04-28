@@ -58,6 +58,12 @@ public class Filme implements Serializable {
     @Lob
     private byte[] poster;
 
+
+    @Override
+    public String toString() {
+       return getNome();
+    }
+
     public String getNome() {
         return nome;
     }
@@ -137,5 +143,4 @@ public class Filme implements Serializable {
     public void setPoster(byte[] poster) {
         this.poster = poster;
     }
-    
 }
