@@ -13,7 +13,7 @@ import javax.persistence.Query;
 public class GeneroDAO {
 
     public boolean salvar(Genero g) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
 
         try {
@@ -31,7 +31,7 @@ public class GeneroDAO {
     }
 
     public boolean remover(Genero g) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
 
         try {
@@ -49,7 +49,7 @@ public class GeneroDAO {
     }
 
     public Genero buscar(Integer id) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
         Genero result = null;
 
@@ -67,7 +67,7 @@ public class GeneroDAO {
     }
 
     public List<Genero> listar() {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
 
         List<Genero> generos = new ArrayList<Genero>();

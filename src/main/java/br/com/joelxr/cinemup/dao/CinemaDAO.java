@@ -1,4 +1,3 @@
-
 package br.com.joelxr.cinemup.dao;
 
 import br.com.caelum.vraptor.ioc.Component;
@@ -18,7 +17,7 @@ import javax.persistence.Query;
 public class CinemaDAO {
 
     public boolean salvar(Cinema c) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
 
         try {
@@ -36,7 +35,7 @@ public class CinemaDAO {
     }
 
     public boolean remover(Cinema c) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
 
         try {
@@ -54,7 +53,7 @@ public class CinemaDAO {
     }
 
     public Cinema buscar(Integer id) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
         Cinema result = null;
 
@@ -72,7 +71,7 @@ public class CinemaDAO {
     }
 
     public List<Cinema> listar() {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
 
         List<Cinema> cinemas = new ArrayList<Cinema>();

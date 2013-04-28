@@ -15,7 +15,7 @@ import javax.persistence.Query;
 public class FilmeDAO {
 
     public boolean salvar(Filme f) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
 
         try {
@@ -33,7 +33,7 @@ public class FilmeDAO {
     }
     
        public boolean remover(Filme f) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
 
         try {
@@ -51,7 +51,7 @@ public class FilmeDAO {
     }
 
     public Filme buscar(Integer id) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
         Filme result = null;
 
@@ -69,7 +69,7 @@ public class FilmeDAO {
     }
 
     public List<Filme> listar() {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
 
         List<Filme> filmes = new ArrayList<Filme>();

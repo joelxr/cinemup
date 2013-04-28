@@ -14,7 +14,7 @@ import javax.persistence.Query;
 public class DiretorDAO {
 
     public boolean salvar(Diretor d) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
 
         try {
@@ -32,7 +32,7 @@ public class DiretorDAO {
     }
 
     public boolean remover(Ator d) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
 
         try {
@@ -50,7 +50,7 @@ public class DiretorDAO {
     }
 
     public Diretor buscar(Integer id) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
         Diretor result = null;
 
@@ -68,7 +68,7 @@ public class DiretorDAO {
     }
 
     public List<Diretor> listar() {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
 
         List<Diretor> diretores = new ArrayList<Diretor>();

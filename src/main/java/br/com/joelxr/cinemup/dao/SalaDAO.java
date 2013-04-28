@@ -15,7 +15,7 @@ import javax.persistence.Query;
 public class SalaDAO {
 
     public boolean salvar(Sala s) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
 
         try {
@@ -33,7 +33,7 @@ public class SalaDAO {
     }
 
     public boolean remover(Sala s) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
 
         try {
@@ -51,7 +51,7 @@ public class SalaDAO {
     }
 
     public Sala buscar(Integer id) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
         Sala result = null;
 
@@ -69,7 +69,7 @@ public class SalaDAO {
     }
 
     public List<Sala> listar() {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemapp");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("cinemup");
         EntityManager em = emf.createEntityManager();
 
         List<Sala> salas = new ArrayList<Sala>();
