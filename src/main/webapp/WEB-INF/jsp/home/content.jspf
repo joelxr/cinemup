@@ -1,0 +1,166 @@
+<%@ page pageEncoding="UTF-8" %>
+<div id="div-conteudo-filmes" class="container collapse out">
+    <div class="container-fluid well">
+        <div class="row-fluid">
+
+            <div class="span1">
+                <button type="button" class="btn btn-info" onclick="mostrarGridFilmes();">
+                    <i class="icon-chevron-left icon-white"></i>
+                </button>
+            </div>
+
+            <div class="span2">
+                <img class="img-rounded" id="les-miserables" src="img/posters/les-miserables.jpg" alt="Os Miseráveis"> 
+            </div>
+
+            <div class="span5">
+
+                <blockquote>
+                    <p>Os Miseráveis</p>
+                    <small>Les Miserables</small>
+                </blockquote>
+
+                <p>In 19th-century France, Jean Valjean, who for decades has been hunted by the ruthless policeman Javert after he breaks parole, agrees to care for factory worker Fantine's daughter, Cosette. The fateful decision changes their lives forever.</p>
+
+                <dl class="dl-horizontal">
+                    <dt>Diretor</dt><dd>Tom Hooper</dd>
+
+                    <dt>Cast</dt>
+                    <dd>Hugh Jackman</dd>
+                    <dd>Russell Crowe</dd>
+                    <dd>Anne Hathaway</dd>
+                    <dd>Amanda Seyfried</dd>
+                    <dd>Sacha Baron Cohen</dd>
+
+                    <dt>Duração</dt><dd>158 min</dd>
+                    <dt>Censura</dt><dd>16</dd>
+                    <dt>Gênero</dt><dd>Drama | Musical | Romance</dd>
+
+                </dl>
+            </div>
+
+            <div id="div-lista-sessoes" class="span3 text-center">
+
+                <ul class="unstyled">
+                    <li><i class="icon-film"></i> <strong>UCI Ribeiro Iguatemi</strong></li>
+                    <li><i class="icon-home"></i> Sala 1</li>
+                    <li><i class="icon-time"></i> 18:30 - 21:10</li>
+                    <li>
+                        <span class="label label-success">Dublado</span>
+                        <span class="label label-info">Exibição em 3D</span>
+                    </li>
+                </ul>
+
+                <ul class="unstyled">
+                    <li><i class="icon-film"></i> <strong>UCI Ribeiro Iguatemi</strong></li>
+                    <li><i class="icon-home"></i> Sala 2</li>
+                    <li><i class="icon-time"></i> 18:30 - 21:10</li>
+                    <li>
+                        <span class="label label-success">Dublado</span>
+                        <span class="label label-info">Exibição em 3D</span>
+                    </li>
+                </ul>
+
+                <ul class="unstyled">
+                    <li><i class="icon-film"></i> <strong>UCI Ribeiro Iguatemi</strong></li>
+                    <li><i class="icon-home"></i> Sala 3</li>
+                    <li><i class="icon-time"></i> 18:30 - 21:10</li>
+                    <li>
+                        <span class="label label-success">Dublado</span>
+                        <span class="label label-info">Exibição em 3D</span>
+                    </li>
+                </ul>
+
+                <ul class="unstyled">
+                    <li><i class="icon-film"></i> <strong>UCI Ribeiro Iguatemi</strong></li>
+                    <li><i class="icon-home"></i> Sala 4</li>
+                    <li><i class="icon-time"></i> 18:30 - 21:10</li>
+                    <li>
+                        <span class="label label-success">Dublado</span>
+                        <span class="label label-info">Exibição em 3D</span>
+                    </li>
+                </ul>
+
+                <ul class="unstyled">
+                    <li><i class="icon-film"></i> <strong>UCI Ribeiro Iguatemi</strong></li>
+                    <li><i class="icon-home"></i> Sala 5</li>
+                    <li><i class="icon-time"></i> 18:30 - 21:10</li>
+                    <li>
+                        <span class="label label-success">Dublado</span>
+                        <span class="label label-info">Exibição em 3D</span>
+                    </li>
+                </ul>
+
+                <ul class="unstyled">
+                    <li><i class="icon-film"></i> <strong>UCI Ribeiro Iguatemi</strong></li>
+                    <li><i class="icon-home"></i> Sala 6</li>
+                    <li><i class="icon-time"></i> 18:30 - 21:10</li>
+                    <li>
+                        <span class="label label-success">Dublado</span>
+                        <span class="label label-info">Exibição em 3D</span>
+                    </li>
+                </ul>
+
+                <ul class="unstyled">
+                    <li><i class="icon-film"></i> <strong>UCI Ribeiro Iguatemi</strong></li>
+                    <li><i class="icon-home"></i> Sala 7</li>
+                    <li><i class="icon-time"></i> 18:30 - 21:10</li>
+                    <li>
+                        <span class="label label-success">Dublado</span>
+                        <span class="label label-info">Exibição em 3D</span>
+                    </li>
+                </ul>
+
+                <ul class="unstyled">
+                    <li><i class="icon-film"></i> <strong>UCI Ribeiro Iguatemi</strong></li>
+                    <li><i class="icon-home"></i> Sala 8</li>
+                    <li><i class="icon-time"></i> 18:30 - 21:10</li>
+                    <li>
+                        <span class="label label-success">Dublado</span>
+                        <span class="label label-info">Exibição em 3D</span>
+                    </li>
+                </ul>
+
+                <ul class="unstyled">
+                    <li><i class="icon-film"></i> <strong>UCI Ribeiro Iguatemi</strong></li>
+                    <li><i class="icon-home"></i> Sala 9</li>
+                    <li><i class="icon-time"></i> 18:30 - 21:10</li>
+                    <li>
+                        <span class="label label-success">Dublado</span>
+                        <span class="label label-info">Exibição em 3D</span>
+                    </li>
+                </ul>
+
+                <ul class="unstyled">
+                    <li><i class="icon-film"></i> <strong>UCI Ribeiro Iguatemi</strong></li>
+                    <li><i class="icon-home"></i> Sala 10</li>
+                    <li><i class="icon-time"></i> 18:30 - 21:10</li>
+                    <li>
+                        <span class="label label-success">Dublado</span>
+                        <span class="label label-info">Exibição em 3D</span>
+                    </li>
+                </ul>
+
+                <ul class="unstyled">
+                    <li><i class="icon-film"></i> <strong>UCI Ribeiro Iguatemi</strong></li>
+                    <li><i class="icon-home"></i> Sala 11</li>
+                    <li><i class="icon-time"></i> 18:30 - 21:10</li>
+                    <li>
+                        <span class="label label-success">Dublado</span>
+                        <span class="label label-info">Exibição em 3D</span>
+                    </li>
+                </ul>
+
+                <ul class="unstyled">
+                    <li><i class="icon-film"></i> <strong>UCI Ribeiro Iguatemi</strong></li>
+                    <li><i class="icon-home"></i> Sala 12</li>
+                    <li><i class="icon-time"></i> 18:30 - 21:10</li>
+                    <li>
+                        <span class="label label-success">Dublado</span>
+                        <span class="label label-info">Exibição em 3D</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+</div>

@@ -1,0 +1,88 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<form class="form-horizontal">    
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span2">
+                <div class="fileupload fileupload-new" data-provides="fileupload" id="poster_filme">
+                    <div id="poster" class="fileupload-new thumbnail" style="width: 220px; height: 320px;"></div>
+                    <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 220px; max-height: 320px; line-height: 20px;"></div>
+                    <div>
+                        <span class="btn btn-file">
+                            <span class="fileupload-new"><i class="icon-folder-open"></i></span>
+                            <span class="fileupload-exists"><i class="icon-folder-open"></i></span>
+                            <input type="file" />
+                        </span>
+
+                        <a href="#" class="btn fileupload-exists" data-dismiss="fileupload"> <i class="icon-remove"></i></a>
+                    </div>
+                </div>
+
+                <div id="poster" class="text-center"></div>
+            </div>
+            <div id="filme_form" class="span10">
+                <div class="control-group">
+                    <label class="control-label">Nome</label>   
+                    <div class="controls">
+                        <input type="text" id="nome" placeholder="Nome original do filme" onblur="carregaValoresIMDB(this.value);">
+                        <input type="text" id="nome_2" placeholder="Segundo nome para o filme">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Ano</label>
+                    <div class="controls">
+                        <input type="text" id="ano" placeholder="Ano do filme">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Sinopse</label>
+                    <div class="controls">
+                        <textarea id="resumo" placeholder="Descrição do filme" rows="6" class="span12"></textarea>
+                    </div>
+                </div>  
+
+                <div class="control-group">
+                    <label class="control-label">Elenco</label>
+                    <div class="controls">
+                        <textarea id="elenco" rows="3" style="width: 670px"></textarea>
+                    </div>
+                </div>  
+
+                <div class="control-group">
+                    <label class="control-label">Diretores</label>
+                    <div class="controls">
+                        <textarea id="diretores" rows="1" style="width: 670px"></textarea>
+                    </div>
+                </div>  
+
+                <div class="control-group">
+                    <label class="control-label">Gênero</label>
+                    <div class="controls">
+                        <textarea id="generos" rows="1" style="width: 670px"></textarea>
+                    </div>
+                </div>  
+
+                <div class="control-group">
+                    <label class="control-label">Duração</label>
+                    <div class="controls">
+                        <div class="input-append">
+                            <input type="text" id="duracao">
+                            <span class="add-on">min</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Censura</label>
+                    <div class="controls">
+                        <div class="input-append">
+                            <input type="text" id="censura">
+                            <span class="add-on">anos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

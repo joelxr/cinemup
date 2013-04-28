@@ -1,0 +1,15 @@
+<%@ page pageEncoding="UTF-8" %>
+<form class="form-horizontal">    
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div id="filme_form" class="span10">
+                <div class="control-group">
+                    <label class="control-label">Cinema</label>
+                    <div class="controls">
+                        <textarea id="cinema" rows="1" style="width: 670px"></textarea>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</form>

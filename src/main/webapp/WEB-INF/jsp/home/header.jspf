@@ -1,0 +1,38 @@
+<%@ page pageEncoding="UTF-8" %>
+<div class="navbar">
+    <div class="navbar-inner">
+        <form class="navbar-form">
+            <div class="container">
+                <div class="input-append">
+                    <input id="nome-filme" type="text" placeholder="Filme" />
+                </div>
+                <div class="input-append">
+                    <input id="nome-cinema" type="text" placeholder="Cinema" />
+                </div>
+                <div id="data-sessao" class="input-append">
+                    <input data-format="dd/MM/yyyy" type="text" class="span10"></input>
+                    <span class="add-on">
+                        <i data-date-icon="icon-calendar"></i>
+                    </span>
+                </div>
+                <div id="hora-sessao" class="input-append">
+                    <input data-format="hh:mm" type="text" class="span10" ></input>
+                    <span class="add-on">
+                        <i data-time-icon="icon-time"></i>
+                    </span>
+                </div>
+                <div class="input-append">
+                    <button class="btn btn-info">
+                        <i class="icon-search icon-white"></i>
+                    </button>
+                </div>
+
+                <div class="input-append">
+                    <a href="filme/preparar_valores" class="btn btn-info">
+                        <i class="icon-plus icon-white"></i>
+                    </a>  
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
