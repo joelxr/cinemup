@@ -40,11 +40,9 @@ public class FilmeController {
         List<Ator> atores = atorDao.listar();
         List<Diretor> diretores = diretorDao.listar();
         List<Genero> generos = generoDao.listar();
-        List<Cinema> cinemas = cinemaDao.listar();
         result.include("lista_atores", Util.listAsString(atores));
         result.include("lista_diretores", Util.listAsString(diretores));
         result.include("lista_generos", Util.listAsString(generos));
-        result.include("lista_cinema", Util.listAsString(cinemas));
         result.redirectTo(FilmeController.class).adicionar();
     }
 

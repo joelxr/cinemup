@@ -1,4 +1,5 @@
 <%-- 
+
     Document   : index
     Created on : 11/04/2013, 18:42:17
     Author     : joel
@@ -153,19 +154,6 @@
                     callback(newValue);
             });
 
-            $('#cinema').textext({
-                plugins: 'tags autocomplete suggestions',
-                suggestions: [${lista_cinemas}]
-            }).bind('isTagAllowed', function(e, data) {
-                var formData = $(e.target).textext()[0].tags()._formData,
-                        list = eval(formData);
-                if (formData.length && list.indexOf(data.tag) >= 0) {
-                    data.result = false;
-                }
-            }).bind('tagClick', function(e, tag, value, callback) {
-                var newValue = window.prompt('Novo valor', value);
-                if (newValue)
-                    callback(newValue);
-            });
-        </script>
-    </body>
+         </script>
+   </body>
+</html>
