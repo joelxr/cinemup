@@ -77,6 +77,8 @@ public class AtorDAO {
 
         List<Ator> atores = new ArrayList<Ator>();
 
+        // teste
+
         try {
             em.getTransaction().begin();
             Query query = em.createQuery("SELECT a FROM Ator a");
